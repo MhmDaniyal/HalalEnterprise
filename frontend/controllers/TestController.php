@@ -23,8 +23,8 @@ class TestController extends \yii\web\Controller
     
     public function actionTest2($name=null,$lname=null) {
         
-        //$name = "Nuttaphong";
-        //$lname = "Jantaruphun";
+        $name = "Nuttaphong";
+        $lname = "Jantaruphun";
         
         $info = "You namr is $name $lname";
         
