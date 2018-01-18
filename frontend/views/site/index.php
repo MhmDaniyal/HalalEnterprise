@@ -20,5 +20,8 @@ $this->title = 'ระบบผู้ประกอบการ';
 
 <?=
 Html::a('link3',['test/test1']);
+?>
 
+<?php
+Yii::$app->db->open();
 ?>

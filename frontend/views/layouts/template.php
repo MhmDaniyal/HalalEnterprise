@@ -34,14 +34,13 @@ MaterialAsset::register($this);
     <?php
     NavBar::begin([
         'brandLabel' => 'สถาบันฮาลาล มหาวิทยาลัยสงขลานครินทร์',
-        
         'brandUrl' => Yii::$app->homeUrl,
         'options' => [
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
     $menuItems = [
-        ['label' => 'หน้าหลัก', 'url' => ['/site/index']],
+        ['label' => 'Home', 'url' => ['/site/index']],
         ['label' => 'About', 'url' => ['/site/about']],
         ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
