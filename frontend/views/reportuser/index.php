@@ -1,9 +1,15 @@
 <?php
-/* @var $this yii\web\View */
+
+use yii\helpers\Html
 ?>
-<h1>/reportuser/index</h1>
+<h1>หมวดรายงาน</h1>
 
 <p>
-    You may change the content of this page by modifying
-    the file <code><?= __FILE__; ?></code>.
+    <?=Html::a('รายงานจังหวัด',['reportuser/report1'])?>
+</p>
+<p>
+    <?=Html::a('รายงานภูมิภาค',['reportuser/report2'])?>
+</p>
+<p>
+    <?=Html::a('รายงานอำเภอ',['reportuser/report3'])?>
 </p>

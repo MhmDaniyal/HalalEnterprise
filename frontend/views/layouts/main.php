@@ -40,13 +40,20 @@ MaterialAsset::register($this);
             'class' => 'navbar-inverse navbar-fixed-top',
         ],
     ]);
+    
+    $report_mnu_itms[] = ['label' => 'รายงานจังหวัด', 'url' => ['reportuser/report1']]; 
+    $report_mnu_itms[] = ['label' => 'รายงานอำเภอ/เขต', 'url' => ['reportuser/report2']]; 
+    $report_mnu_itms[] = ['label' => 'รายงานภูมิภาค', 'url' => ['reportuser/report3']]; 
+    
     $menuItems = [
         ['label' => 'หน้าหลัก', 'url' => ['/site/index']],
-        ['label' => 'About', 'url' => ['/site/about']],
+        ['label' => 'Report',
+            'items' => $report_mnu_itms
+            ],
         ['label' => 'Contact', 'url' => ['/site/contact']],
     ];
     if (Yii::$app->user->isGuest) {
-        $menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
+        //$menuItems[] = ['label' => 'Signup', 'url' => ['/site/signup']];
         $menuItems[] = ['label' => 'Login', 'url' => ['/site/login']];
     } else {
         $menuItems[] = '<li>'
